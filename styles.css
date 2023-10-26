@@ -1,0 +1,137 @@
+.main > * {
+    border: 1px solid red;
+}
+
+.material-symbols-outlined {
+    margin-right: 8px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 255,
+  'opsz' 24
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-flow: column;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    display: inline;
+    margin-bottom: 10px;
+  }
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    justify-self: center;
+}
+
+input[type="checkbox"] {
+    display: inline;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    justify-self: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit {
+    height: 32px;
+    width: 60%;
+    justify-self: center;
+}
+
+.inp {
+    height: 18px;
+    width: fit-content;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    background-color: transparent;
+    padding: 8px;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    background-color: gray;
+    padding: 1rem;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.card {
+    border-radius: 16px;
+    border-left: 12px solid black;
+    border-bottom: 12px solid black;
+    background-color: lightgray;
+    height: 200px;
+    width: 200px;
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.status {
+    border-radius: 4px;
+    padding: 4px;
+    border: 1px solid black;
+}
+
+.delete {
+    border-radius: 4px;
+    padding: 4px;
+    background-color: lightcoral;
+    cursor: pointer;
+}
