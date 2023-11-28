@@ -1,27 +1,6 @@
 const myLibrary = [];
 const bookshelf = document.querySelector(".body");
 
-function Book(title, author, pages, read) 
-{ 
-    this.title = title; 
-    this.author = author; 
-    this.pages = pages; 
-    if (read) {
-        this.read = "Read"; 
-    } else {
-        this.read = "Not Read"; 
-    }
-    this.info = function () {
-        let info = `
-        Title: ${this.title}
-        Author: ${this.author}
-        Pages: ${this.pages}
-        Status: ${this.read}`
-
-        return info;
-    }
-}
-
 function addBook(book) {
     myLibrary.push(book);
 }
@@ -68,6 +47,29 @@ function toggleStatus(index) {
     }
 
     refreshBooks();
+}
+
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title; 
+        this.author = author; 
+        this.pages = pages; 
+        if (read) {
+            this.read = "Read"; 
+        } else {
+            this.read = "Not Read"; 
+        }
+    }
+
+    info() {
+        let info = `
+        Title: ${this.title}
+        Author: ${this.author}
+        Pages: ${this.pages}
+        Status: ${this.read}`
+
+        return info;
+    }
 }
 
 let hp = new Book('Harry Potter', 'JK', 1000, false);
